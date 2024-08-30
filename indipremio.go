@@ -84,7 +84,9 @@ func main() {
 					fmt.Printf("%s\n", roman)
 				case "/":
 					num := roma1 / roma2
-
+if num <= 0 {
+						panic(err)
+					}
 					roman := convertArabicToRoman(num)
 					fmt.Printf("%s\n ", roman)
 
