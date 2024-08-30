@@ -84,7 +84,7 @@ func main() {
 					fmt.Printf("%s\n", roman)
 				case "/":
 					num := roma1 / roma2
-if num <= 0 {
+					if num <= 0 {
 						panic(err)
 					}
 					roman := convertArabicToRoman(num)
@@ -206,4 +206,3 @@ func RomanToInt(string_ string) (int, error) {
 	}
 	return sum, nil
 }
-
